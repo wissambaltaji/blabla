@@ -1,0 +1,977 @@
+Microsoft Windows [Version 10.0.10586]
+(c) 2015 Microsoft Corporation. All rights reserved.
+
+C:\Users\canib>cd
+C:\Users\canib
+
+C:\Users\canib>cd desktop
+
+C:\Users\canib\Desktop>mkdir new
+A subdirectory or file new already exists.
+
+C:\Users\canib\Desktop>mkdir new1
+
+C:\Users\canib\Desktop>cd new1
+
+C:\Users\canib\Desktop\new1>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   ../new/index.html
+        modified:   ../startup-landing-page-clone/css/style.css
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        ../../.bash_history
+        ../../.gitconfig
+        ../../.ssh/
+        ../../.viminfo
+        ../../AppData/
+        ../../Contacts/
+        ../New folder/
+        ../boots/
+        ../desktop.ini
+        ../new/css/README.md
+        ./
+        ../startup-landing-page-clone/css/normalize.css
+        ../startup-landing-page-clone/images/
+        ../startup-landing-page-clone/index.html
+        ../sub/
+        ../think/
+        ../../Documents/
+        ../../Downloads/
+        ../../Favorites/
+        ../../Intel.sav/
+        ../../Intel/
+        ../../IntelGraphicsProfiles/
+        ../../Links/
+        ../../Music/
+        ../../NTUSER.DAT{08eebcbf-ad22-11e5-b4b0-8d8c0c9a9de1}.TM.blf
+        ../../NTUSER.DAT{08eebcbf-ad22-11e5-b4b0-8d8c0c9a9de1}.TMContainer00000000000000000001.regtrans-ms
+        ../../NTUSER.DAT{08eebcbf-ad22-11e5-b4b0-8d8c0c9a9de1}.TMContainer00000000000000000002.regtrans-ms
+        ../../OneDrive/
+        ../../Pictures/
+        ../../Program Files (x86)/
+        ../../Saved Games/
+        ../../Searches/
+        ../../Videos/
+        ../../ntuser.dat
+        ../../ntuser.dat.log1
+        ../../ntuser.dat.log2
+        ../../ntuser.ini
+        ../../style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\canib\Desktop\new1>git innit
+git: 'innit' is not a git command. See 'git --help'.
+
+Did you mean this?
+        init
+
+C:\Users\canib\Desktop\new1>git init
+Initialized empty Git repository in C:/Users/canib/Desktop/new1/.git/
+
+C:\Users\canib\Desktop\new1>git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\canib\Desktop\new1>git add -
+fatal: pathspec '-' did not match any files
+
+C:\Users\canib\Desktop\new1>git add ,
+fatal: pathspec ',' did not match any files
+
+C:\Users\canib\Desktop\new1>git add .
+
+C:\Users\canib\Desktop\new1>git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   index.html
+
+
+C:\Users\canib\Desktop\new1>git add -index.html
+error: unknown switch `d'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+
+
+C:\Users\canib\Desktop\new1>git add index.html
+
+C:\Users\canib\Desktop\new1>git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   index.html
+
+
+C:\Users\canib\Desktop\new1>git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        style.css
+
+
+C:\Users\canib\Desktop\new1>git add style.css
+
+C:\Users\canib\Desktop\new1>git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   index.html
+        new file:   style.css
+
+
+C:\Users\canib\Desktop\new1>git remote add origin https://github.com/wissambaltaji/blabla.git
+
+C:\Users\canib\Desktop\new1>git remote
+origin
+
+C:\Users\canib\Desktop\new1>git remote -v
+origin  https://github.com/wissambaltaji/blabla.git (fetch)
+origin  https://github.com/wissambaltaji/blabla.git (push)
+
+C:\Users\canib\Desktop\new1>git push -u origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/wissambaltaji/blabla.git'
+
+C:\Users\canib\Desktop\new1>git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   index.html
+        new file:   style.css
+
+
+C:\Users\canib\Desktop\new1>git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   index.html
+        new file:   style.css
+
+
+C:\Users\canib\Desktop\new1>touch readme
+'touch' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>git init
+Reinitialized existing Git repository in C:/Users/canib/Desktop/new1/.git/
+
+C:\Users\canib\Desktop\new1>git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+Did you mean this?
+        add
+
+C:\Users\canib\Desktop\new1>git add .
+
+C:\Users\canib\Desktop\new1>git commit -m "fhrhrh"
+[master (root-commit) a657612] fhrhrh
+ 2 files changed, 83 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 style.css
+
+C:\Users\canib\Desktop\new1>git push -u origin master
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 1.06 KiB | 0 bytes/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/wissambaltaji/blabla.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
+C:\Users\canib\Desktop\new1>Microsoft Windows [Version 10.0.10586]
+'Microsoft' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>(c) 2015 Microsoft Corporation. All rights reserved.
+2015 was unexpected at this time.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>C:\Users\canib>cd
+'C:\Users\canib' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>C:\Users\canib
+'C:\Users\canib' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>C:\Users\canib>cd desktop
+'C:\Users\canib' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>C:\Users\canib\Desktop>mkdir new
+'C:\Users\canib\Desktop' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>A subdirectory or file new already exists.
+'A' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>C:\Users\canib\Desktop>mkdir new1
+'C:\Users\canib\Desktop' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>C:\Users\canib\Desktop>cd new1
+'C:\Users\canib\Desktop' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>C:\Users\canib\Desktop\new1>git status
+'C:\Users\canib\Desktop\new1' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>On branch master
+'On' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>Changes not staged for commit:
+'Changes' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>  (use "git add <file>..." to update what will be committed)
+'use' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>  (use "git checkout -- <file>..." to discard changes in working directory)
+'use' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>        modified:   ../new/index.html
+'modified:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        modified:   ../startup-landing-page-clone/css/style.css
+'modified:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>Untracked files:
+'Untracked' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>  (use "git add <file>..." to include in what will be committed)
+'use' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>        ../../.bash_history
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        ../../.gitconfig
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        ../../.ssh/
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        ../../.viminfo
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        ../../AppData/
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        ../../Contacts/
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        ../New folder/
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        ../boots/
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        ../desktop.ini
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        ../new/css/README.md
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        ./
+'.' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        ../startup-landing-page-clone/css/normalize.css
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        ../startup-landing-page-clone/images/
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        ../startup-landing-page-clone/index.html
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        ../sub/
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        ../think/
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        ../../Documents/
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        ../../Downloads/
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        ../../Favorites/
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        ../../Intel.sav/
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        ../../Intel/
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        ../../IntelGraphicsProfiles/
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        ../../Links/
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        ../../Music/
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        ../../NTUSER.DAT{08eebcbf-ad22-11e5-b4b0-8d8c0c9a9de1}.TM.blf
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        ../../NTUSER.DAT{08eebcbf-ad22-11e5-b4b0-8d8c0c9a9de1}.TMContainer00000000000000000001.regtrans-ms
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        ../../NTUSER.DAT{08eebcbf-ad22-11e5-b4b0-8d8c0c9a9de1}.TMContainer00000000000000000002.regtrans-ms
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        ../../OneDrive/
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        ../../Pictures/
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        ../../Program Files (x86)/
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        ../../Saved Games/
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        ../../Searches/
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        ../../Videos/
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        ../../ntuser.dat
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        ../../ntuser.dat.log1
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        ../../ntuser.dat.log2
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        ../../ntuser.ini
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        ../../style.css
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>no changes added to commit (use "git add" and/or "git commit -a")
+'no' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>C:\Users\canib\Desktop\new1>git innit
+'C:\Users\canib\Desktop\new1' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>git: 'innit' is not a git command. See 'git --help'.
+'git:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>Did you mean this?
+'Did' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        init
+'init' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>C:\Users\canib\Desktop\new1>git init
+'C:\Users\canib\Desktop\new1' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>Initialized empty Git repository in C:/Users/canib/Desktop/new1/.git/
+'Initialized' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>C:\Users\canib\Desktop\new1>git status
+'C:\Users\canib\Desktop\new1' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>On branch master
+'On' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>Initial commit
+'Initial' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>Untracked files:
+'Untracked' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>  (use "git add <file>..." to include in what will be committed)
+'use' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>        index.html
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>nothing added to commit but untracked files present (use "git add" to track)
+'nothing' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>C:\Users\canib\Desktop\new1>git add -
+'C:\Users\canib\Desktop\new1' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>fatal: pathspec '-' did not match any files
+'fatal:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>C:\Users\canib\Desktop\new1>git add ,
+'C:\Users\canib\Desktop\new1' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>fatal: pathspec ',' did not match any files
+'fatal:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>C:\Users\canib\Desktop\new1>git add .
+'C:\Users\canib\Desktop\new1' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>C:\Users\canib\Desktop\new1>git status
+'C:\Users\canib\Desktop\new1' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>On branch master
+'On' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>Initial commit
+'Initial' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>Changes to be committed:
+'Changes' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>  (use "git rm --cached <file>..." to unstage)
+'use' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>        new file:   index.html
+'new' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>C:\Users\canib\Desktop\new1>git add -index.html
+'C:\Users\canib\Desktop\new1' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>error: unknown switch `d'
+'error:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>usage: git add [<options>] [--] <pathspec>...
+The system cannot find the file specified.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>    -n, --dry-run         dry run
+'-n' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>    -v, --verbose         be verbose
+'-v' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>    -i, --interactive     interactive picking
+'-i' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>    -p, --patch           select hunks interactively
+'-p' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>    -e, --edit            edit current diff and apply
+'-e' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>    -f, --force           allow adding otherwise ignored files
+'-f' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>    -u, --update          update tracked files
+'-u' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>    -N, --intent-to-add   record only the fact that the path will be added later
+'-N' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>    -A, --all             add changes from all tracked and untracked files
+'-A' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+'--ignore-removal' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>    --refresh             don't add, only refresh the index
+'--refresh' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>    --ignore-errors       just skip files which cannot be added because of errors
+'--ignore-errors' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>    --ignore-missing      check if - even missing - files are ignored in dry run
+'--ignore-missing' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>C:\Users\canib\Desktop\new1>git add index.html
+'C:\Users\canib\Desktop\new1' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>C:\Users\canib\Desktop\new1>git status
+'C:\Users\canib\Desktop\new1' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>On branch master
+'On' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>Initial commit
+'Initial' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>Changes to be committed:
+'Changes' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>  (use "git rm --cached <file>..." to unstage)
+'use' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>        new file:   index.html
+'new' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>C:\Users\canib\Desktop\new1>git status
+'C:\Users\canib\Desktop\new1' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>On branch master
+'On' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>Initial commit
+'Initial' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>Changes to be committed:
+'Changes' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>  (use "git rm --cached <file>..." to unstage)
+'use' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>        new file:   index.html
+'new' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>Untracked files:
+'Untracked' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>  (use "git add <file>..." to include in what will be committed)
+'use' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>        style.css
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>C:\Users\canib\Desktop\new1>git add style.css
+'C:\Users\canib\Desktop\new1' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>C:\Users\canib\Desktop\new1>git status
+'C:\Users\canib\Desktop\new1' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>On branch master
+'On' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>Initial commit
+'Initial' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>Changes to be committed:
+'Changes' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>  (use "git rm --cached <file>..." to unstage)
+'use' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>        new file:   index.html
+'new' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        new file:   style.css
+'new' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>C:\Users\canib\Desktop\new1>git remote add origin https://github.com/wissambaltaji/blabla.git
+'C:\Users\canib\Desktop\new1' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>C:\Users\canib\Desktop\new1>git remote
+'C:\Users\canib\Desktop\new1' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>origin
+'origin' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>C:\Users\canib\Desktop\new1>git remote -v
+'C:\Users\canib\Desktop\new1' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>origin  https://github.com/wissambaltaji/blabla.git (fetch)
+'origin' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>origin  https://github.com/wissambaltaji/blabla.git (push)
+'origin' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>C:\Users\canib\Desktop\new1>git push -u origin master
+'C:\Users\canib\Desktop\new1' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>error: src refspec master does not match any.
+'error:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>error: failed to push some refs to 'https://github.com/wissambaltaji/blabla.git'
+'error:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>C:\Users\canib\Desktop\new1>git status
+'C:\Users\canib\Desktop\new1' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>On branch master
+'On' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>Initial commit
+'Initial' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>Changes to be committed:
+'Changes' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>  (use "git rm --cached <file>..." to unstage)
+'use' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>        new file:   index.html
+'new' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        new file:   style.css
+'new' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>C:\Users\canib\Desktop\new1>git status
+'C:\Users\canib\Desktop\new1' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>On branch master
+'On' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>Initial commit
+'Initial' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>Changes to be committed:
+'Changes' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>  (use "git rm --cached <file>..." to unstage)
+'use' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>        new file:   index.html
+'new' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        new file:   style.css
+'new' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>C:\Users\canib\Desktop\new1>touch readme
+'C:\Users\canib\Desktop\new1' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>'touch' is not recognized as an internal or external command,
+''touch'' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>operable program or batch file.
+'operable' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>C:\Users\canib\Desktop\new1>git init
+'C:\Users\canib\Desktop\new1' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>Reinitialized existing Git repository in C:/Users/canib/Desktop/new1/.git/
+'Reinitialized' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>C:\Users\canib\Desktop\new1>git add.
+'C:\Users\canib\Desktop\new1' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>git: 'add.' is not a git command. See 'git --help'.
+'git:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>Did you mean this?
+'Did' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>        add
+'add' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>C:\Users\canib\Desktop\new1>git add .
+'C:\Users\canib\Desktop\new1' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>C:\Users\canib\Desktop\new1>git commit -m "fhrhrh"
+'C:\Users\canib\Desktop\new1' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>[master (root-commit) a657612] fhrhrh
+'[master' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1> 2 files changed, 83 insertions(+)
+'2' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1> create mode 100644 index.html
+'create' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1> create mode 100644 style.css
+'create' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>C:\Users\canib\Desktop\new1>git push -u origin master
+'C:\Users\canib\Desktop\new1' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>Counting objects: 4, done.
+'Counting' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>Delta compression using up to 4 threads.
+'Delta' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>Compressing objects: 100% (3/3), done.
+'Compressing' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>Writing objects: 100% (4/4), 1.06 KiB | 0 bytes/s, done.
+'Writing' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>Total 4 (delta 0), reused 0 (delta 0)
+'Total' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>To https://github.com/wissambaltaji/blabla.git
+'To' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1> * [new branch]      master -> master
+'*' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>Branch master set up to track remote branch master from origin.
+'Branch' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\canib\Desktop\new1>
+C:\Users\canib\Desktop\new1>C:\Users\canib\Desktop\new1>
